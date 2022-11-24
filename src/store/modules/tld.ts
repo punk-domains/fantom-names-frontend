@@ -21,7 +21,7 @@ export default {
     minterTldPrice1: 5000,
     minterTldPrice2: 2500,
     minterTldPrice3: 779,
-    minterTldPrice4: 129,
+    minterTldPrice4: 99,
     minterTldPrice5: 49
   }),
 

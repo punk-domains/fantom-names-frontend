@@ -68,7 +68,7 @@
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" @click="editData" :disabled="btnInactive">Save data</button>
+          <button type="button" class="btn btn-secondary" @click="editData" :disabled="btnInactive">Submit</button>
           <button id="closeCustomDataModal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
