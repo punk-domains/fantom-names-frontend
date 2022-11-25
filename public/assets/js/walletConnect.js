@@ -397,7 +397,7 @@
       e = 250; // TODO: change chain ID
 			let r;
 			const n = s[e];
-			return n && (r = `https://rpc.ftm.tools`), r // TODO
+			return n && (r = `https://1rpc.io/ftm`), r // TODO
 		}
 
 		function z(e, t) {

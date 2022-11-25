@@ -44,6 +44,7 @@ export default function useChainHelpers() {
       if (networkId === 137) {
         // Polygon PoS Chain
         urls = [
+          "https://1rpc.io/matic",
           "https://polygon-rpc.com/"
         ];
       } else if (networkId === 80001) {
@@ -75,6 +76,7 @@ export default function useChainHelpers() {
       } else if (networkId === 250) {
         // Fantom Mainnet
         urls = [
+          "https://1rpc.io/ftm",
           "https://rpcapi.fantom.network",
           "https://rpc.ftm.tools"
         ];
@@ -157,7 +159,7 @@ export default function useChainHelpers() {
         chainId: "0xA",
         chainName: "Optimism",
         nativeCurrency: { decimals: 18, name: "ETH", symbol: "ETH" }, 
-        rpcUrls: ["https://mainnet.optimism.io"]
+        rpcUrls: ["https://1rpc.io/op"]
       }] 
     } else if (networkName == "Optimism Testnet") {
       method = "wallet_addEthereumChain"
@@ -175,7 +177,7 @@ export default function useChainHelpers() {
         chainId: "0x89",
         chainName: "Polygon PoS Chain",
         nativeCurrency: { decimals: 18, name: "MATIC", symbol: "MATIC" }, 
-        rpcUrls: ["https://polygon-rpc.com/"]
+        rpcUrls: ["https://1rpc.io/matic"]
       }] 
     } else if (networkName == "Gnosis Testnet") {
       method = "wallet_addEthereumChain"
@@ -220,7 +222,7 @@ export default function useChainHelpers() {
         chainId: "0xFA",
         chainName: "Fantom",
         nativeCurrency: { decimals: 18, name: "FTM", symbol: "FTM" }, 
-        rpcUrls: ["https://rpc.ftm.tools"]
+        rpcUrls: ["https://1rpc.io/ftm"]
       }] 
     } else if (networkName == "Fantom Testnet") {
       method = "wallet_addEthereumChain"
