@@ -2,7 +2,7 @@
   <div class="container text-center">
     <img class="img-fluid main-img rounded" src="../assets/fantom-logo.svg" />
 
-    <div class="text-align-header mt-3">
+    <div class="text-align-header mt-4 mb-2">
       <h1>Mint your {{getTldName}} web3 username!</h1>
     </div>
 
@@ -334,7 +334,7 @@ export default {
 }
 
 .main-img {
-  width: 8em;
+  width: 4em;
 }
 
 th:first-of-type {
