@@ -225,7 +225,7 @@ export default {
           this.address,
           referral,
           {
-            value: ethers.utils.parseEther(this.getPrice)
+            value: ethers.utils.parseEther(String(this.getPrice))
           }
         );
 
