@@ -15,7 +15,7 @@ export default {
     tldContract: null,
     tldChainId: 250,
     tldChainName: "Fantom",
-    minterAddress: "0x1D882E64bb7f4D49e67018d81254236A2A6465a3", // TODO
+    minterAddress: "0x7aa8597134eAb3259F4D7d08a09ff69EDf73DdFf", // TODO
     minterContract: null,
     minterPaused: true,
     minterTldPrice1: 5000,
