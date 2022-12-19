@@ -15,13 +15,13 @@ export default {
     tldContract: null,
     tldChainId: 250,
     tldChainName: "Fantom",
-    minterAddress: "0x7aa8597134eAb3259F4D7d08a09ff69EDf73DdFf", // TODO
+    minterAddress: "0x7Df67B2ef4eEDf49Fc53Bb6E94e90e9546FC6c6B", // TODO
     minterContract: null,
     minterPaused: true,
     minterTldPrice1: 5000,
     minterTldPrice2: 2500,
     minterTldPrice3: 779,
-    minterTldPrice4: 99,
+    minterTldPrice4: 129,
     minterTldPrice5: 49
   }),
 
