@@ -4,6 +4,12 @@
 
     <div class="text-align-header mt-4 mb-2">
       <h1>Mint your {{getTldName}} web3 username!</h1>
+      <p>
+        50% of each mint payment goes to 
+        <a href="https://forum.fantom.network/t/ecosystem-support-vault/69" target="_blank">
+          supporting projects that benefit the Fantom ecosystem.
+        </a>
+        </p>
     </div>
 
     <div class="d-flex justify-content-center domain-input-container mb-3 mt-5">
