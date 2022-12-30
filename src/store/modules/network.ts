@@ -17,7 +17,7 @@ export default {
   getters: { 
     getBlockExplorerBaseUrl() {
       // TODO
-      //return "https://testnet.ftmscan.com/";
+      //return "https://testnet.ftmscan.com";
       return "https://ftmscan.com";
     },
     
