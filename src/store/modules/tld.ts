@@ -22,7 +22,8 @@ export default {
     minterTldPrice2: 2500,
     minterTldPrice3: 779,
     minterTldPrice4: 129,
-    minterTldPrice5: 49
+    minterTldPrice5: 49,
+    referralFee: 1000
   }),
 
   getters: { 
@@ -67,6 +68,9 @@ export default {
     },
     getMinterTldPrice5(state) {
       return state.minterTldPrice5;
+    },
+    getReferralFee(state) {
+      return state.referralFee;
     }
   },
 
@@ -105,6 +109,9 @@ export default {
     setMinterTldPrice5(state, price) {
       state.minterTldPrice5 = price;
     },
+    setReferralFee(state, fee) {
+      state.referralFee = Number(fee);
+    },
   },
 
   actions: {
@@ -140,6 +147,9 @@ export default {
       const domainPrice5 = ethers.utils.formatEther(priceWei5);
       commit("setMinterTldPrice5", domainPrice5);
 
+      // fetch referral fee
+      const refFee = await minterContract.referralFee();
+      commit("setReferralFee", refFee);
     }
   }
 };

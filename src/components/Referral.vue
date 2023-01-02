@@ -5,7 +5,7 @@
         <h3>Referrals</h3>
 
         <p> 
-          Share this referral link and earn rewards from new domain mints!
+          Share this referral link and earn a {{getReferralFee/100}}% referral fee from new mints!
         </p>
 
         <div class="row mt-1">
@@ -32,6 +32,7 @@ export default {
 
   computed: {
     ...mapGetters("user", ["getUserAddress", "getUserSelectedName"]),
+    ...mapGetters("tld", ["getReferralFee"]),
     
     getNameOrAddress() {
       if (this.getUserSelectedName) {
