@@ -114,7 +114,7 @@
             </div>
 
             <div class="col-sm-9">
-              <span class="text-break">{{tokenAmount}} {{this.selectedToken}}</span>
+              <span class="text-break">{{tokenAmount}} {{selectedToken}}</span>
             </div>
           </div>
 
