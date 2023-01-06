@@ -21,7 +21,7 @@
 
     <a class="icons" target="_blank" href="https://discord.gg/8dSrwrAQeu"><i class="bi bi-discord"></i></a>
 
-    <a class="icons" target="_blank" href="https://twitter.com/PunkDomains"><i class="bi bi-twitter"></i></a>
+    <a class="icons" target="_blank" href="https://twitter.com/fantomnamesorg"><i class="bi bi-twitter"></i></a>
 
     <a class="icons" href="http://blog.punk.domains" target="_blank"><i class="bi bi-pencil-square"></i></a>
     

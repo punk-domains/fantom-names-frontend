@@ -19,6 +19,11 @@ body {
   color: #fff;
 }
 
+code {
+  color: #fff;
+  font-style: italic;
+}
+
 p {
   font-size: 18px;
 }
