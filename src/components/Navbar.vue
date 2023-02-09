@@ -17,7 +17,7 @@
           <div class="navbar-menu-buttons">
             <a 
               class="btn btn-primary mx-2 navbar-menu-btn" 
-              href="https://paintswap.finance/marketplace/fantom/collections/fantom-names-(.fantom)/nfts" 
+              href="https://paintswap.finance/marketplace/fantom/collections/fantom-names" 
               target="_blank"
             >Marketplace</a>
 
