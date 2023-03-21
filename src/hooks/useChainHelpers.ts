@@ -93,7 +93,7 @@ export default function useChainHelpers() {
       } else if (networkId === 250) {
         // Fantom Mainnet
         urls = [
-          "https://1rpc.io/ftm",
+          "https://rpc.ankr.com/fantom",
           "https://rpcapi.fantom.network",
           "https://rpc.ftm.tools"
         ];
@@ -266,7 +266,7 @@ export default function useChainHelpers() {
         chainId: "0xFA",
         chainName: "Fantom",
         nativeCurrency: { decimals: 18, name: "FTM", symbol: "FTM" }, 
-        rpcUrls: ["https://1rpc.io/ftm"]
+        rpcUrls: ["https://rpc.ankr.com/fantom"]
       }] 
     } else if (networkName == "Fantom Testnet") {
       method = "wallet_addEthereumChain"
