@@ -17,6 +17,7 @@ export default {
     tldChainName: "Fantom",
     minterAddress: "0x7Df67B2ef4eEDf49Fc53Bb6E94e90e9546FC6c6B", // TODO
     minterContract: null,
+    minterLoadingData: false,
     minterPaused: true,
     minterTldPrice1: 5000,
     minterTldPrice2: 2500,
@@ -50,6 +51,9 @@ export default {
     },
     getMinterContract(state) {
       return state.minterContract;
+    },
+    getMinterLoadingData(state) {
+      return state.minterLoadingData;
     },
     getMinterPaused(state) {
       return state.minterPaused;
@@ -90,6 +94,10 @@ export default {
       state.discountPercentage = percentage;
     },
 
+    setMinterLoadingData(state, loading) {
+      state.minterLoadingData = loading;
+    },
+
     setMinterPaused(state, paused) {
       state.minterPaused = paused;
     },
@@ -116,6 +124,8 @@ export default {
 
   actions: {
     async fetchMinterContractData({commit, state}) {
+      commit("setMinterLoadingData", true);
+
       let fProvider = getFallbackProvider(state.tldChainId);
 
       // minter contract
@@ -150,6 +160,8 @@ export default {
       // fetch referral fee
       const refFee = await minterContract.referralFee();
       commit("setReferralFee", refFee);
+
+      commit("setMinterLoadingData", false);
     }
   }
 };

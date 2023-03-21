@@ -22,14 +22,10 @@
             >Marketplace</a>
 
             <div v-if="isActivated" class="btn-group mx-2 navbar-menu-btn">
-              <router-link tag="button" class="btn btn-primary" to="/send-tokens">Send Tokens</router-link>
-            </div>
-
-            <div v-if="isActivated" class="btn-group mx-2 navbar-menu-btn">
               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 {{getNetworkName}}
               </button>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuButton1">
                 <li>
                   <span 
                     class="dropdown-item"
@@ -45,7 +41,7 @@
               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ getNameOrAddress }}
               </button>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+              <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuButton2">
                 <router-link tag="li" class="dropdown-item" to="/profile">Profile</router-link>
                 <router-link tag="li" class="dropdown-item" to="/">Buy domain</router-link>
                 <router-link tag="li" class="dropdown-item" to="/search-domain">Search domain</router-link>
@@ -58,6 +54,10 @@
             </div>
 
             <button v-if="!isActivated" class="btn btn-primary navbar-menu-btn" @click="open">Connect wallet</button>
+
+            <div v-if="isActivated" class="btn-group mx-2 navbar-menu-btn">
+              <router-link tag="button" class="btn btn-primary" to="/send-tokens">Send Tokens</router-link>
+            </div>
           </div>
         </div>
 
